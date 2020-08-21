@@ -1,23 +1,57 @@
 <Payload xmlns="http://javaops.ru"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://javaops.ru payload.xsd">
-    <Users>
-        <User flag="active" city="kiv">
-            <email>gmail@gmail.com</email>
-            <fullName>Full Name</fullName>
-        </User>
-        <User flag="superuser" city="spb">
-            <email>admin@javaops.ru</email>
-            <fullName>Admin</fullName>
-        </User>
-        <User flag="deleted" city="spb">
-            <email>mail@yandex.ru</email>
-            <fullName>Deleted</fullName>
-        </User>
-    </Users>
-    <Cities>
-        <City id="spb">Санкт-Петербург</City>
-        <City id="kiv">Киев</City>
-        <City id="mnsk">Минск</City>
-    </Cities>
+  <Users>
+    <User id="user-riekinkmlksz" flag="active" city="kiv" email="gmail@gmail.com">
+      <fullName>Petia Ivanov</fullName>
+    </User>
+    <User id="user-rcdjrczqxrfg" flag="superuser" city="spb" email="admin@javaops.ru">
+      <fullName>Ivan Petrovich</fullName>
+    </User>
+    <User id="user-uptuympcibnp" flag="deleted" city="spb" email="mail@yandex.ru">
+      <fullName>Harry Potter</fullName>
+    </User>
+    <User id="user-wazgwvjkfcen" flag="active" city="kiv" email="gmail@gmail.com">
+      <fullName>Seriozha Batikovich</fullName>
+    </User>
+    <User id="user-csuuihyovuhx" flag="superuser" city="spb" email="admin@javaops.ru">
+      <fullName>Elena Petrova</fullName>
+    </User>
+    <User id="user-heeuzadqwiff" flag="deleted" city="spb" email="mail@yandex.ru">
+      <fullName>Piter Piper</fullName>
+    </User>
+  </Users>
+
+  <Projects>
+    <Project>
+      <name>topjava</name>
+      <description>Create your enterprise app</description>
+      <Group group="CURRENT">
+        <name>topjava01</name>
+        <user-ref>user-riekinkmlksz</user-ref>
+        <user-ref>user-rcdjrczqxrfg</user-ref>
+        <user-ref>user-uptuympcibnp</user-ref>
+      </Group>
+      <Group group="CURRENT">
+        <name>topjava02</name>
+        <user-ref>user-riekinkmlksz</user-ref>
+        <user-ref>user-wazgwvjkfcen</user-ref>
+        <user-ref>user-heeuzadqwiff</user-ref>
+      </Group>
+    </Project>
+    <Project>
+      <name>masterjava</name>
+      <description>Create your multi modules app</description>
+      <Group group="CURRENT">
+        <name>masterjava01</name>
+        <user-ref>user-csuuihyovuhx</user-ref>
+        <user-ref>user-heeuzadqwiff</user-ref>
+      </Group>
+    </Project>
+  </Projects>
+  <Cities>
+    <City id="spb">Санкт-Петербург</City>
+    <City id="kiv">Киев</City>
+    <City id="mnsk">Минск</City>
+  </Cities>
 </Payload>
